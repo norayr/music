@@ -9,13 +9,13 @@ all:
 mp3:
 		@while read -r line; do \
 			echo "$$line"; \
-			youtube-dl -x -k --audio-format=mp3 --audio-quality=0 $$line ; \
+			youtube-dl -x --audio-format=mp3 --audio-quality=0 $$line ; \
 		done < ${list}
 
 vorbis:
 		@while read -r line; do \
 			echo "$$line"; \
-			youtube-dl -x -k --audio-format=vorbis --audio-quality=0 $$line ; \
+			youtube-dl -x --audio-format=vorbis --audio-quality=0 $$line ; \
 		done < ${list}
 
 sync_mp3:

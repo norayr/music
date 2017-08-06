@@ -33,7 +33,4 @@ sync_ogg:
 		rsync -aPv -e "ssh" *.ogg nemo@${jolla}:${remote_path}/${basNam}/
 
 clean:
-		rm *.webm
-		rm *.mp4
-		rm *.mp4a
-		rm *.mkv
+		rm *.webm *.mp4 *.m4a *.mkv

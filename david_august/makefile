@@ -6,6 +6,12 @@ remote_path = "/home/nemo/Music/music_videos"
 
 all:
 
+tag_all_oggs:
+		bash tag.sh ogg
+
+tag_all_mp3s:
+		bash tag.sh mp3
+
 mp3:
 		@while read -r line; do \
 			echo "$$line"; \
@@ -24,4 +30,8 @@ sync_mp3:
 sync_ogg:
 		rsync -aPv -e "ssh" *.ogg nemo@${jolla}:${remote_path}/${basNam}/
 
-
+clean:
+		rm *.webm
+		rm *.mp4
+		rm *.mp4a
+		rm *.mkv

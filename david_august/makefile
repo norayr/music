@@ -19,9 +19,9 @@ vorbis:
 		done < ${list}
 
 sync_mp3:
-		rsync -aPv -e "ssh" *.mp3 ${jolla}:${remote_path}/music_videos/${basNam}/
+		rsync -aPv -e "ssh" *.mp3 nemo@${jolla}:${remote_path}/music_videos/${basNam}/
 
 sync_ogg:
-		rsync -aPv -e "ssh" *.ogg ${jolla}:${remote_path}/music_videos/${basNam}/
+		rsync -aPv -e "ssh" *.ogg nemo@${jolla}:${remote_path}/music_videos/${basNam}/
 
 

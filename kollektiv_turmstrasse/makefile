@@ -22,7 +22,7 @@ mp3:
 vorbis:
 		@while read -r line; do \
 			echo "$$line"; \
-			youtube-dl -x --audio-format=vorbis --audio-quality=0 $$line ; \
+			youtube-dl -x -k --audio-format=vorbis --audio-quality=0 $$line ; \
 		done < ${list}
 		make tag_all_oggs
 

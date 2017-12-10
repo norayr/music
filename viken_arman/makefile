@@ -2,7 +2,7 @@ list   = "list.txt"
 jolla  = "10.23.23.5"
 curDir = $(shell pwd)
 basNam = $(shell basename `pwd`)
-remote_path = "/home/nemo/Music/music"
+remote_path = "/home/nemo/Music/music_videos"
 
 all:
 

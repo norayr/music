@@ -1,3 +1,6 @@
+#modprobe rndis_host
+#modprobe cdc_ether
+#modprobe usb_f_rndis
 jolla_wired = "192.168.2.15" 
 remote_path = "/home/nemo/Music/music"
 

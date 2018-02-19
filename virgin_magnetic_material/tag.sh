@@ -20,7 +20,7 @@ do
   echo $i
   j=${i%.}
   k=${j%-}
-  id3tool -t "$k" -a "$k" -r "Mees Salome" $i
+  id3tool -t "$k" -a "$k" -r "Virgin Magnetic Material" $i
 done
 
 IFS=$SAVEIFS

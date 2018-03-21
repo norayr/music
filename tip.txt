@@ -1,0 +1,1 @@
+ffmpeg -i input.mp3 -ss 10 -t 6 -acodec copy output.mp3

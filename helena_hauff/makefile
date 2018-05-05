@@ -16,7 +16,7 @@ mp3:
 		@while read -r line; do \
 			echo "$$line"; \
 			youtube-dl -x  --audio-format=mp3 --audio-quality=0 $$line ; \
-			done < ${list}
+		done < ${list}
 		make tag_all_mp3s
 
 vorbis:

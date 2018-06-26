@@ -20,7 +20,7 @@ do
   echo $i
   j=${i%.}
   k=${j%-}
-  id3tool -t "$k" -a "$k" -r "nth" $i
+  id3tool -t "$k" -a "$k" -r "madota" $i
 done
 
 IFS=$SAVEIFS
